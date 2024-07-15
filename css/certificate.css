@@ -1,0 +1,95 @@
+.swiper-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    min-height: 550px;
+  }
+  
+  .swiper-title {
+    text-align: center;
+    font-size: 3rem;
+    color: forestgreen;
+  }
+  
+  .carousel-swiper .swiper-slide {
+    position: relative;
+  }
+  
+  .carousel-swiper .image-wrapper {
+    overflow: none;
+
+  }
+  
+  .carousel-swiper .image-wrapper img {
+    display: block;
+    border: 2px solid #fcfcfc;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(bottom, rgba(255, 0, 0, 0.1) 0%, transparent 32px, transparent 100%);
+  }
+  
+  .details {
+    padding: 25px 20px;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+    color: #fbfbfb;
+  }
+  
+  .details span {
+    display: block;
+    font-size: 16px;
+    color: #f44336;
+  }
+  
+  .details h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.1;
+    color: var(--bglight);
+  }
+  .details h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--bglight);
+  }
+  
+  .details p {
+    margin: 8px 0 0;
+    opacity: 0.65;
+    font-size: 14px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: var(--bglight);
+  }
+  
+  .swiper-section .swiper-pagination-bullet {
+    margin: 0 4px;
+    width: 16px;
+    height: 16px;
+    z-index: 50;
+    background-color: var(--font1);
+  }
+  
+  .swiper-section .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--font1);
+  }
+  .swiper-slide-active .details {
+    display: block; /* Show details for the active slide */
+}

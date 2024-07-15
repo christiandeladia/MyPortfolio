@@ -1,0 +1,74 @@
+/* About Page Collage */
+.left .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+  }
+  
+  .left .container .grid-container {
+    margin: auto;
+    max-width: 600px;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+  }
+  
+  .collage1 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .collage1 .grid-container > * {
+    transition: all 0.5s;
+  }
+  .collage1 .grid-container > *:hover {
+    z-index: 99;
+    transform: scale(1.3);
+  }
+  
+  .collage1 .item {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px 0px;
+    border: 5px solid white;
+  }
+  
+  .item1 {
+    z-index: 10;
+    grid-area: 1/6/5/10;
+  }
+  .item2 {
+    z-index: 6;
+    grid-area: 5/1/11/7;
+  }
+  .item3 {
+    z-index: 5;
+    grid-area: 4/6/11/13;
+  }
+  .item4 {
+    grid-area: 2/-1/8/-7;
+  }
+  .item5 {
+    z-index: 10;
+    grid-area: 7/-3/10/-6;
+  }
+  .item6 {
+    z-index: 6;
+    grid-area: -1/3/-9/11;
+  }
+  .item7 {
+    z-index: 6;
+    grid-area: -3/-2/-9/-8;
+  }
+
+  .about_icons{
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px 20px 0;
+    font-size: 40px;
+  }
