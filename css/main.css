@@ -533,17 +533,21 @@
   }
   
   .contact .contact-content .row i {
-    font-size: 25px;
+    /* font-size: 25px; */
     background: #1e3551;
     border: 2px solid;
     padding: 6px;
     margin: 0;
     height: 50px;
-    width: 50px;
+    min-width: 50px;
     align-items: center;
     display: flex;
     border-radius: 10px 0;
     justify-content: space-around;
+  }
+
+  .contact-icon{
+    font-size: 20px !important;
   }
   
   .contact .contact-content .info .head {
@@ -759,7 +763,7 @@
     .home{
     background-size: 560px auto;
     background-position: 95% 2%;
-    height: 35vh;
+    height: 70vh;
     }
     .home .home-content .text-2 {
       font-size: 60px;
@@ -788,6 +792,33 @@
   }
   
   @media (max-width: 947px) {
+    .max-width {
+      width: 90%;
+    }
+    .home .max-width {
+      padding: 0 20px;
+    }
+    .home{
+      background-size: 500px auto;
+      background-position: 95% 2%;
+      height: 70vh;
+      }
+      .home .home-content{
+        margin-top: 290px;
+      }
+      .home .home-content a {
+        font-size: 14px;
+        padding: 10px 30px;
+      }
+      .home .home-content .text-1 {
+        font-size: 20px;
+      }
+      .home .home-content .text-2 {
+        font-size: 40px;
+      }
+      .home .home-content .text-3 {
+        font-size: 20px;
+      }
     .menu-btn {
       display: block;
       z-index: 999;
@@ -878,10 +909,10 @@
   }
   
   @media (max-width: 500px) {
-  .home{
-    background-size: 400px auto;
+    .home{
+    background-size: 350px auto;
     background-position: 50% 5%;
-    height: 65vh;
+    min-height: 65vh;
     }
     .home .home-content{
       margin-top: 290px;
@@ -921,5 +952,12 @@
       font-size: 23px;
       line-height: 38px;
     }
+
+    .contact .contact-content .row .info {
+      margin-left: 10px;
+    }
+    .contact .contact-content .info .sub-title {
+      font-size: 15px;
+  }
   }
   
